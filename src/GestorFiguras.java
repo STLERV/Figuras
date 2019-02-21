@@ -1,6 +1,6 @@
-package com.company;
+import com.company.*;
 
-public interface GestorFiguras {
+public class GestorFiguras {
 
 
     public static double suma(Figura[] l) {
@@ -19,19 +19,20 @@ public interface GestorFiguras {
 
 
 
-
     public static void main(String[] args) {
 
 
         Figura[] f = new Figura[4];
 
         f[0] = new Circulo(200);
-        f[1] = new Triangulo (3, 4);
+        f[1] = new Triangulo(3, 4);
         f[2] = new Rectangulo(5, 5);
-        f[3] = new Cuadrado (64);
+        f[3] = new Cuadrado(64);
 
         System.out.println("La suma de las areas es: " + suma(f));
 
 
     }
+
+
 }
